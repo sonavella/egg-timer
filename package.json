@@ -1,0 +1,16 @@
+{
+  "name": "egg-timeer",
+  "version": "1.0.0",
+  "description": "A cute egg timer application built with Electron.",
+  "main": "main.js",
+  "scripts": {
+  "start": "electron ."
+},
+  "keywords": [],
+  "author": "SONAL",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "electron": "^40.6.0"
+  }
+}

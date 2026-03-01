@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Egg Timer &lt;3</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body> <div class="title-bar">
+        <div class="title-text">Egg Timer &lt;3</div>
+        <div class="window-controls">
+            <button id="minimize-btn" class="control-btn minimize-btn">_</button>
+            <button id="close-btn" class="control-btn close-btn">X</button>
+        </div>
+    </div>
+
+    <div id="start-screen" class="screen active">
+        <div class="start-bg-box"> 
+            <h1>Let's Time <br />Your Egg!</h1>
+            <button id="start-button" class="pixel-btn">
+                Start <span class="circle"></span>
+            </button>
+        </div>
+    </div>
+
+    <div id="selection-screen" class="screen">
+        <h2 class="second-screen">What are you <br />making today!</h2>
+        <div class="egg-options">
+            
+            <div class="egg-card" id="soft-egg-btn" data-time="180">
+                <img src="images/soft-egg.png" alt="Soft Egg" class="egg-img" />
+                <p>Soft Egg</p>
+            </div> 
+            
+            <div class="egg-card" id="poached-egg-btn" data-time="300">
+                <img src="images/poached-egg.png" alt="Poached Egg" class="egg-img" />
+                <p>Poached Egg</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="timer-screen" class="screen">
+        <h2>Your Egg is<br> ready in...</h2>
+        <img src="images/big-bowl.png" alt="Egg Timer" class="timer-img" />
+        <div id="time-display" class="timer-box">00:00</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
