@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=McLaren&family=VT323&display=swap');
+
 body {
     background-color: #fcf5aa;
-    font-family: " McLaren", cursive;
+    font-family: "Mclaren", cursive;
     font-weight: 400;
     font-style: normal;
+    
     display: flex;
+    flex-direction: column; 
     justify-content: center;
     align-items: center; 
     height: 100vh;
@@ -23,12 +25,22 @@ body {
     align-items: center;
 }
 
-h1, h2 {
+
+h1 {
     color: #000;
-    font-size: 1.5em;
+    font-size: 2.5em;
     margin-bottom: 20px; 
-    margin-top: 0;
-    font-weight: 100;
+    margin-top: 0; 
+    font-family: "Mclaren", cursive;
+}
+
+
+h2 {
+    color: #000;
+    font-size: 2.5em;
+    margin-bottom: 20px; 
+    margin-top: 40px; 
+    font-family: "Mclaren", cursive;
 }
 
 .pixel-btn {
@@ -140,22 +152,19 @@ h1, h2 {
     overflow: hidden;
 }
 .title-bar {
-    position: absolute; 
-    top: 20px; 
-    left: 50%; 
-    transform: translateX(-50%); 
     width: 350px; 
     display: flex;
     align-items: center;
     justify-content: space-between; 
-    padding: 0;
+    padding: 0; 
+    margin-bottom: 10px; 
     box-sizing: border-box;
     -webkit-app-region: drag; 
 }
 .title-text {
     color: #c96565;
     font-size: 1.2rem;
-    font-family: Mclaren, cursive;
+   font-family: "Mclaren", cursive;
     width: fit-content; 
     margin: 0; 
 }
