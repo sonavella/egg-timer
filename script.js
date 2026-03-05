@@ -10,9 +10,11 @@ if (typeof require !== 'undefined') {
         ipcRenderer.send('minimize-app');   
     });
 
-    closeBtn.addEventListener('click', () => {
-        ipcRenderer.send('close-app');  
-    });
+ closeBtn.addEventListener('click', () => { 
+    clickSound.play();
+    clickSound.onended = () => ipcRenderer.send('close-app');
+});
+
 } else {
     console.log("Running in Chrome! Buttons are in web-display mode.");
     
@@ -94,3 +96,12 @@ if (poachedEggButton) {
     });
 }
 
+const buttons = document.querySelectorAll('.sound-btn');
+const clickSound = new Audio('sound/click-sound.mp3');
+
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        clickSound.currentTime = 0;
+        clickSound.play();
+    });
+});
