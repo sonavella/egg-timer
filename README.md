@@ -6,7 +6,7 @@ I designed this app in Figma and brought it to life using HTML, CSS, and JavaScr
 
 ## ✨ Features
 * **Custom UI:** A fully custom desktop window with functional minimize and close buttons.
-* **Pixel Art Aesthetic:** Styled with custom Figma graphics, pastel colors, and the VT323 retro font.
+* **Pixel Art Aesthetic:** Styled with custom Figma graphics, pastel colors, and the Mclaren font.
 * **Interactive Menus:** Animated hover states and smooth screen transitions.
 * **Functional Timer:** Select between a Soft Egg (3 minutes) or a Poached Egg (5 minutes) and watch the countdown!
 
